@@ -26,11 +26,8 @@
 
   var Service = Backbone.Service = function(options) {
     this.cid = _.uniqueId("service");
-    _.extend(this, _.pick(options, serviceOptions));
     this.initialize.apply(this, arguments);
   };
-
-  var serviceOptions = [];
 
   _.extend(Service.prototype, Backbone.Events, {
 
@@ -41,6 +38,8 @@
     }
 
   });
+
+  Service.extend = Backbone.Model.extend;
 
 });
 
