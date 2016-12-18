@@ -19,5 +19,5 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "main": "backbone-service.js",
+  "main": "backbone-service.js"
 }
