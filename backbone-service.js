@@ -33,9 +33,7 @@
 
     initialize: $.noop,
 
-    start: function() {
-      return $.Deferred().resolve().promise();
-    }
+    start: $.when
 
   });
 
